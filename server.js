@@ -55,6 +55,12 @@ app.get('/projects', (req, res) => {
   });
 });
 
+app.get('/watchme', (req, res) => {
+  res.render('whereAreMeNow.hbs', {
+    pageTitle: 'Watch me now'
+  })
+})
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Unable to handle request'
